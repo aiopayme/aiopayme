@@ -1,0 +1,15 @@
+MESSAGES = {
+    -32700: {"ru": "Ошибка парсинга JSON", "en": "Parse error", "uz": "JSON tahlil xatosi"},
+    -32600: {"ru": "Неверный запрос", "en": "Invalid request", "uz": "Noto'g'ri so'rov"},
+    -32601: {"ru": "Метод не найден", "en": "Method not found", "uz": "Metod topilmadi"},
+    -32602: {"ru": "Неверные параметры", "en": "Invalid params", "uz": "Noto'g'ri parametrlar"},
+    -32400: {"ru": "Внутренняя ошибка", "en": "Internal error", "uz": "Ichki xato"},
+    -32504: {"ru": "Доступ запрещён", "en": "Access denied", "uz": "Ruxsat yo'q"},
+    -31050: {"ru": "Неверный аккаунт", "en": "Invalid account", "uz": "Noto'g'ri hisob"},
+    -31001: {"ru": "Неверная сумма", "en": "Invalid amount", "uz": "Noto'g'ri miqdor"},
+    -31003: {"ru": "Транзакция не найдена", "en": "Transaction not found", "uz": "Tranzaksiya topilmadi"},
+    -31008: {"ru": "Транзакция уже существует", "en": "Transaction already exists", "uz": "Tranzaksiya allaqachon mavjud"},
+    -31007: {"ru": "Невозможно отменить", "en": "Unable to cancel", "uz": "Bekor qilib bo'lmaydi"},
+    -31060: {"ru": "Невозможно выполнить", "en": "Unable to perform", "uz": "Bajarib bo'lmaydi"},
+    -31099: {"ru": "Транзакция в обработке", "en": "Transaction is processing", "uz": "Tranzaksiya qayta ishlanmoqda"},
+}
