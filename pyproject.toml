@@ -4,6 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aiopayme"
+version = "0.1.4"
 description = "Async Python library for Payme integration"
 readme = "README.md"
 license = { text = "MIT" }
@@ -29,9 +30,6 @@ authors = [
 Homepage = "https://aiopayme.github.io"
 Documentation = "https://aiopayme.github.io"
 Repository = "https://github.com/aiopayme/aiopayme"
-
-[tool.hatch.version]
-path = "aiopayme/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["aiopayme"]
