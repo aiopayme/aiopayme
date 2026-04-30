@@ -15,7 +15,8 @@ from aiopayme.exceptions import PaymeError, Errors
 from aiopayme.api.cards import CardsAPI
 from aiopayme.api.receipts import ReceiptsAPI
 
-logging.getLogger("aiopayme").setLevel(logging.DEBUG)
+logger = logging.getLogger("aiopayme")
+logger.setLevel(logging.DEBUG)
 
 class Payme:
     def __init__(self,
