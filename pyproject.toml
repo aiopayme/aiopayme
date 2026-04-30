@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aiopayme"
-version = "0.1.4"
+version = "0.1.5"
 description = "Async Python library for Payme integration"
 readme = "README.md"
 license = { text = "MIT" }
@@ -23,7 +23,7 @@ classifiers = [
     "Framework :: AsyncIO",
 ]
 authors = [
-    { name = "@pywave", email = "jumayevn@list.ru" }
+    { name = "pywave", email = "jumayevn@list.ru" }
 ]
 
 [project.urls]
