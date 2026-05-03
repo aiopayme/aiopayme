@@ -38,7 +38,6 @@ class BaseAPI:
             data = response.json()
 
             if "error" in data:
-                print(data["error"])
                 raise PaymeError(code=data["error"]["code"])
 
             return data.get("result", {})

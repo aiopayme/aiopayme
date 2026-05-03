@@ -20,7 +20,7 @@ class ReceiptsAPI(BaseAPI):
         return await self._request("receipts.create", params)
 
     async def pay(self, invoice_id: str, token: str, payer: dict | None = None) -> dict:
-        params = {
+        params: dict = {
             "id": invoice_id,
             "token": token,
         }

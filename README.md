@@ -87,6 +87,7 @@ from aiopayme.types import (
 
 from models import OrderStatus, Order, PaymeTransaction
 
+
 class PaymeService:
 
     def __init__(self, db: AsyncSession):
@@ -186,6 +187,11 @@ class PaymeService:
 
         tx.state = 2
         tx.perform_time = time_to_payme()
+        await self.db.execute(
+            update(Order)
+            .where(Order.id == tx.order_id)
+            .values(status=OrderStatus.PAID.value)
+        )
         await self.db.commit()
         return ctx.ok(transaction_id=tx.payme_id, perform_time=tx.perform_time, state=2)
 

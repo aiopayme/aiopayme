@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aiopayme"
-version = "0.1.8"
+version = "0.1.9"
 description = "Async Python library for Payme integration"
 readme = "README.md"
 license = { text = "MIT" }
