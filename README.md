@@ -7,6 +7,10 @@
 [![Docs](https://img.shields.io/badge/docs-aiopayme.github.io-teal)](https://aiopayme.github.io)
 [![Telegram](https://img.shields.io/badge/Telegram-aiopayme-blue?logo=telegram)](https://t.me/aiopayme)
 
+## Tutorial
+
+[![YouTube](https://img.shields.io/badge/YouTube-Как_подключить_Payme_к_боту-red?logo=youtube&style=for-the-badge)](https://www.youtube.com/watch?v=XI-xrN6DxtI)
+
 Async Python library for [Payme](https://payme.uz) integration.
 
 ## Quick Start
@@ -211,6 +215,11 @@ class PaymeService:
         tx.state = -2 if tx.state == 2 else -1
         tx.cancel_time = time_to_payme()
         tx.reason = ctx.reason
+        await self.db.execute(
+            update(Order)
+            .where(Order.id == tx.order_id)
+            .values(status=OrderStatus.CANCELLED.value)
+        )
         await self.db.commit()
         return ctx.ok(
             transaction=tx.payme_id,
