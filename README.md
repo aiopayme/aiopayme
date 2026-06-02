@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/aiopayme/aiopayme)](LICENSE)
 [![Downloads](https://static.pepy.tech/badge/aiopayme)](https://pepy.tech/project/aiopayme)
 [![Docs](https://img.shields.io/badge/docs-aiopayme.github.io-teal)](https://aiopayme.github.io)
+[![Habr](https://img.shields.io/badge/Habr-статья-blue?logo=habr)](https://habr.com/ru/articles/1042466/)
 [![Telegram](https://img.shields.io/badge/Telegram-aiopayme-blue?logo=telegram)](https://t.me/aiopayme)
 
 ## Tutorial
